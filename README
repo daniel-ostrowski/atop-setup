@@ -1,0 +1,11 @@
+To run, use, execute
+
+sh atopinstall.sh
+
+Then do whatever testing you want.
+
+sudo killall atop
+
+scp the files /home/ubuntu/log and /home/ubuntu/baseline from the server back to your computer when you are done
+
+Make sure that when you are scp-ing the files out that you give the files distinct names on your local computer so you know which files went with which test scenarios and so you don't accidentally overwrite the files from other runs!
