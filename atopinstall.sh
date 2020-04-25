@@ -17,6 +17,8 @@ echo "Maximum theoretical read speed (writing /dev/null):" >> baseline
 dd if=/dev/zero of=/dev/null count=1000000 2>> baseline
 echo "Maximum disk read spead (writing /dev/null):" >> baseline
 dd if=kitbash of=/dev/null 2>> baseline
+echo "sudo fdisk -l"
+sudo fdisk -l >> baseline
 sudo atop -w log 1 &
 echo "You can now begin testing."
 echo "When you finish testing, run the command:"
